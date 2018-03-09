@@ -25,7 +25,7 @@ int		ft_atoi(const char *str)
 	int i;
 	int n;
 
-	if ((*str >= '\t' && *str <= '\r') || (*str == 32))
+	while ((*str >= '\t' && *str <= '\r') || (*str == 32))
 		str++;
 	if (*str == '-')
 		n = -1;
