@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LISTH
+#ifndef FT_LIST_H
 # define ft_list_h
 
 typedef struct s_list
