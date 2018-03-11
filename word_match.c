@@ -36,11 +36,9 @@ int 	main(int ac, char **av)
 				i++;
 			j++;
 		}
-		i = 0;
-		while (av[1][i] != '\0')
+		if (av[1][i] == '\0')
 		{
-			ft_putchar(av[1][i]);
-			i++;
+			ft_putstr(av[1]);
 		}
 	}
 	ft_putchar('\n');
