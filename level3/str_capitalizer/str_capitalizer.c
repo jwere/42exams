@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void    rstr_capitalizer(char *str)
+void    str_capitalizer(char *str)
 {
     static int i = 0;
 
@@ -15,7 +15,7 @@ void    rstr_capitalizer(char *str)
         str[i] -= 32;
     write(1, &str[i], 1);
     i++;
-    rstr_capitalizer(str);
+    str_capitalizer(str);
 }
 
 int		main(int ac, char **av)
@@ -26,7 +26,7 @@ int		main(int ac, char **av)
         i = 1;
         while (av[i])
         {
-            rstr_capitalizer(av[i++]);
+            str_capitalizer(av[i++]);
             write(1, "\n", 1);
         }
     }
